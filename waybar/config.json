@@ -1,0 +1,88 @@
+{   
+    "height": 40, // Waybar height (to be removed for auto height)
+    "output": "DP-1",
+    "layer": "top", // Waybar at top layer
+    "modules-left": ["custom/launcher", "cpu", "memory"],
+    "modules-center":["clock"],
+    "modules-right": [
+        "tray",
+        "custom/wallpaper",
+        "bluetooth",
+        "network",
+        "pulseaudio",
+        "backlight",
+        "custom/power-menu"
+    ],
+       "clock": {
+        "interval": 60,
+        "align": 0,
+        "rotate": 0,
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%d %b, %I:%M %p}",
+        "format-alt": "{:%a %b %d, %G}"
+    },
+        "tray": {
+          "spacing": 20
+    },
+    "bluetooth": {
+        "format": "",
+        "on-click": "blueberry"
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "   {}  %",
+        "max-length": 10,
+        "on-click": ""
+    },
+    "memory": {
+      "format": " {} %"
+    },
+    "backlight": {
+        "device": "DP-1",
+        "format": "{icon}",
+        "tooltip-format": "{percent}",
+        "format-icons": ["󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "],
+        "on-scroll-up": "~/.config/waybar/scripts/brightness.sh --inc",
+        "on-scroll-down": "~/.config/waybar/scripts/brightness.sh --dec"
+    },
+    "network": {
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰀂 ",
+        "format-disconnected": "󰖪",
+        "tooltip-format": "{essid}",
+        "on-click": "kitty nmtui",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    },
+    "pulseaudio": {
+        "format": "{icon}  ",
+        "format-muted": " 󰸈 ",
+        "on-click": "pavucontrol-qt &",
+        "on-click-right": "pamixer -t",
+        "scroll-step": 5,
+        "on-scroll-up": "~/.config/waybar/scripts/volume.sh --inc",
+        "on-scroll-down": "~/.config/waybar/scripts/volume.sh --dec"
+    },
+    
+    "custom/weather": {
+        "exec": "python3 ~/.config/waybar/scripts/weather.py",
+        "restart-interval": 300,
+        "return-type": "json"
+    },
+    
+    "custom/power-menu": {
+        "format": " ⏻ ",
+        "on-click": "~/.config/rofi/scripts/powermenu"
+    },
+    "custom/launcher": {
+          "icon-size": 30,
+          "spacing": 10,
+        "format": "  ",
+        "on-click": "~/.config/rofi/scripts/launcher"
+    },
+    "custom/wallpaper": {
+        "format": "󰆞",
+        "on-click": "~/.config/rofi/scripts/wallpaper",
+        "on-click-right": "~/.config/waybar/scripts/wallpaper.sh"
+    }
+    
+}

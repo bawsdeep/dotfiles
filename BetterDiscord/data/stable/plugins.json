@@ -1,0 +1,15 @@
+{
+    "ZeresPluginLibrary": true,
+    "BetterAnimations": false,
+    "CallTimeCounter": false,
+    "BetterFormattingRedux": true,
+    "InvisibleTyping": true,
+    "Hide Channels": false,
+    "HideServersChannelsRedux": false,
+    "channelCollapseButton": false,
+    "Sandwich": false,
+    "ChanellListHider": false,
+    "MinimizeServerSidebar": false,
+    "CollapsibleUI": true,
+    "AutoScroll": true
+}
