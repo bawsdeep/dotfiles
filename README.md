@@ -16,7 +16,7 @@ source your own gpu drivers
 
 set up utils
 
-`ame -S polkit-kde-agent kitty pcmanfm-qt neovim neovide wget swaylock-effects brightnessctl pavucontrol alsa-utils grim slurp wl-clipboard mpv python-pip rofi blueberry bluez bluez-utils ranger ts-node zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd awesome-terminal-fonts powerline inotify-tools greetd greetd-tuigreet thunar thunar-archive-plugin gvfs ark playerctl pamixer whitesur-icon-theme-git whitesur-cursor-theme-git whitesur-gtk-theme-git xdg-user-dirs nwg-look-bin python-pillow pywal-discord-git mako-git loupe gnome-keyring neofetch imagemagick wtype ttf-3270-nerd inter-font-beta noto-fonts-emoji ttf-droid alsa-firmware tumbler python-pip`
+`ame -S polkit-kde-agent kitty pcmanfm-qt neovim neovide wget swaylock-effects brightnessctl pavucontrol alsa-utils grim slurp wl-clipboard mpv python-pip rofi blueberry bluez bluez-utils ranger ts-node zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd awesome-terminal-fonts powerline inotify-tools greetd greetd-tuigreet thunar thunar-archive-plugin gvfs ark playerctl pamixer whitesur-icon-theme-git whitesur-cursor-theme-git whitesur-gtk-theme-git xdg-user-dirs nwg-look-bin python-pillow pywal-discord-git mako-git loupe gnome-keyring neofetch imagemagick wtype ttf-3270-nerd inter-font-beta noto-fonts-emoji ttf-droid otf-font-awesome ttf-font-awesome alsa-firmware tumbler python-pip`
 
 all other aps
 `ame -S vivaldi vivaldi-ffmpeg-codecs discord betterdiscordctl betterdiscord-git liquidctl coolercontrol neovim eza nvtop cava tty-clock`
@@ -74,16 +74,27 @@ copy all the directories to your .config dir using. MAKE SURE YOU ARE CURRENTLY 
 
 now reboot and enjoy
 
+I like nvchad so get it if you want
+`git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim`
+
 If you get an error on line 60 of hyprland.conf after rebooting saying that colors couldn't be found, be sure to check line 24. Replace "v" with your Linux username. After that, run hyprctl reload in your terminal. Once this is resolved, it shouldn't happen anymore for future reboots.
 
 Commands
 like i3
-'Super + Return(enter)' kitty terminal 
-'Super + D' rofi drun
-'Super + q' closes focused window
-'Super + Shift + Arrow Keys' moves focused window
-'ALT + r' resize windows with arrow keys, REMEMBER TO 'ESC' WHEN DONE
-'Super + Shift + Space' toggle float
+
+`Super + Return(enter)` kitty terminal 
+
+`Super + D' rofi drun`
+
+`Super + q` closes focused window
+
+`Super + Shift + Arrow Keys` moves focused window
+
+`ALT + r' resize windows with arrow keys` REMEMBER TO 'ESC' WHEN DONE
+
+`Super + Shift + Space` toggle float
+
+`Super + W` wallpaper picker, by defualt looks for folder in ~/Wallpapers/
 
 
 
