@@ -82,19 +82,26 @@ If you get an error on line 60 of hyprland.conf after rebooting saying that colo
 Commands
 like i3
 
-`Super + Return(enter)` kitty terminal 
+`Super + Return(enter)` 
+kitty terminal 
 
-`Super + D' rofi drun`
+`Super + D`
+rofi drun
 
-`Super + q` closes focused window
+`Super + q` 
+closes focused window
 
-`Super + Shift + Arrow Keys` moves focused window
+`Super + Shift + Arrow Keys` 
+moves focused window
 
-`ALT + r' resize windows with arrow keys` REMEMBER TO 'ESC' WHEN DONE
+`ALT + r' 
+resize windows with arrow keys REMEMBER TO 'ESC' WHEN DONE
 
-`Super + Shift + Space` toggle float
+`Super + Shift + Space` 
+toggle float
 
-`Super + W` wallpaper picker, by defualt looks for folder in ~/Wallpapers/
+`Super + W` 
+wallpaper picker, by defualt looks for folder in ~/Wallpapers/
 
 
 
