@@ -23,7 +23,7 @@ source your own gpu drivers
 
 set up utils
 
-`ame -S polkit-kde-agent kitty pcmanfm-qt neovim neovide wget swaylock-effects brightnessctl pavucontrol alsa-utils grim slurp wl-clipboard mpv python-pip rofi blueberry bluez bluez-utils ranger ts-node zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd awesome-terminal-fonts powerline inotify-tools greetd greetd-tuigreet thunar thunar-archive-plugin gvfs ark playerctl pamixer whitesur-icon-theme-git whitesur-cursor-theme-git whitesur-gtk-theme-git xdg-user-dirs nwg-look-bin python-pillow pywal-discord-git mako-git loupe gnome-keyring neofetch imagemagick wtype ttf-3270-nerd inter-font-beta noto-fonts-emoji ttf-droid otf-font-awesome ttf-font-awesome alsa-firmware tumbler python-pip`
+`ame -S polkit-kde-agent kitty neovim neovide wget swaylock-effects brightnessctl pavucontrol alsa-utils grim slurp wl-clipboard mpv python-pip rofi blueberry bluez bluez-utils ranger ts-node zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd awesome-terminal-fonts powerline inotify-tools greetd greetd-tuigreet thunar thunar-archive-plugin gvfs ark playerctl pamixer whitesur-icon-theme-git whitesur-cursor-theme-git whitesur-gtk-theme-git xdg-user-dirs nwg-look-bin python-pillow pywal-discord-git mako-git loupe gnome-keyring neofetch imagemagick wtype ttf-3270-nerd inter-font-beta noto-fonts-emoji ttf-droid otf-font-awesome ttf-font-awesome alsa-firmware tumbler python-pip`
 
 all other aps
 `ame -S vivaldi vivaldi-ffmpeg-codecs discord betterdiscordctl betterdiscord-git liquidctl coolercontrol neovim eza nvtop cava tty-clock`
