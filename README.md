@@ -113,6 +113,9 @@ wallpaper picker, by defualt looks for folder in ~/Wallpapers/
 Optional: 
 add this to your .zshrc (hint, you can call it with zrc)
 
+...
+more in the ~/.config/hypr/hyprland.conf
+
 `chpwd() ls`
 
 this makes file navigation a breeze.
