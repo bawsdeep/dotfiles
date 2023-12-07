@@ -1,9 +1,16 @@
 
 wdiff's hyprland setup and scripts.
 
+![Screenshot_2023-12-05-07-04-36_25269](https://github.com/weeabootarsh/dotfiles/assets/16247239/ee29c3a2-7aa0-4349-ae34-2fba6c7f7ce4)
+
+from an archinstall minimal~
+
 setup ame
+
 `sudo pacman -S --needed base-devel pacman-contrib cargo`
+
 `git clone https://git.getcryst.al/crystal/pkgbuilds/ame`
+
 `cd ame && makepkg -si`
 
 essential 
@@ -94,7 +101,7 @@ closes focused window
 `Super + Shift + Arrow Keys` 
 moves focused window
 
-`ALT + r' 
+`ALT + r`
 resize windows with arrow keys REMEMBER TO 'ESC' WHEN DONE
 
 `Super + Shift + Space` 
