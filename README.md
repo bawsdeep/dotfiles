@@ -5,13 +5,20 @@ wdiff's hyprland setup and scripts.
 
 from an archinstall minimal~
 
-setup ame
+setup ame and git
 
-`sudo pacman -S --needed base-devel pacman-contrib cargo`
+`sudo pacman -S --needed base-devel pacman-contrib cargo git`
 
 `git clone https://git.getcryst.al/crystal/pkgbuilds/ame`
 
 `cd ame && makepkg -si`
+
+`cd ~`
+
+clone this repo
+`git clone https://github.com/weeabootarsh/dotfiles.git`
+
+`cd ~`
 
 essential 
 
