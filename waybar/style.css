@@ -108,6 +108,11 @@ window#waybar.hidden {
     color: @color10;
 }
 
+#custom-media {
+    color: @color12;
+    font-weight: bold;
+}
+
 #custom-wallpaper {
     padding: 0 18px 0 12px;
     color: @color14;

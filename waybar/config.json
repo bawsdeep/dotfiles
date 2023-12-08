@@ -1,9 +1,16 @@
 {   
     "height": 40, // Waybar height (to be removed for auto height)
-    "output": "DP-1",
+    "output": "eDP-1",
     "layer": "top", // Waybar at top layer
-    "modules-left": ["custom/launcher", "cpu", "memory"],
-    "modules-center":["clock"],
+    "modules-left": [
+        "custom/launcher",
+        "cpu",
+        "memory",
+        "custom/media"
+    ],
+    "modules-center":[
+        "clock"
+    ],
     "modules-right": [
         "tray",
         "custom/wallpaper",
@@ -18,7 +25,7 @@
         "align": 0,
         "rotate": 0,
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%d %b, %I:%M %p}",
+        "format": "{:%d %b, %H:%M }",
         "format-alt": "{:%a %b %d, %G}"
     },
         "tray": {
@@ -30,15 +37,16 @@
     },
     "cpu": {
         "interval": 10,
-        "format": "   {}  %",
+        "format": "  {load}  %",
         "max-length": 10,
-        "on-click": ""
+        "on-click": "kitty btop"
     },
     "memory": {
-      "format": " {} %"
+      "format": "  {}  %",
+      "on-click": "kitty btop"
     },
     "backlight": {
-        "device": "DP-1",
+        "device": "eDP-1",
         "format": "{icon}",
         "tooltip-format": "{percent}",
         "format-icons": ["󱩎 ", "󱩏 ", "󱩐 ", "󱩑 ", "󱩒 ", "󱩓 ", "󱩔 ", "󱩕 ", "󱩖 ", "󰛨 "],
@@ -46,17 +54,17 @@
         "on-scroll-down": "~/.config/waybar/scripts/brightness.sh --dec"
     },
     "network": {
-        "format-wifi": "{icon}",
-        "format-ethernet": "󰀂 ",
-        "format-disconnected": "󰖪",
+        "format-wifi": "{icon} ",
+        "format-ethernet": "󰀂  ",
+        "format-disconnected": "󰖪 ",
         "tooltip-format": "{essid}",
-        "on-click": "kitty nmtui",
+        "on-click": "nm-connection-editor",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
     },
     "pulseaudio": {
         "format": "{icon}  ",
         "format-muted": " 󰸈 ",
-        "on-click": "pavucontrol-qt &",
+        "on-click": "pavucontrol &",
         "on-click-right": "pamixer -t",
         "scroll-step": 5,
         "on-scroll-up": "~/.config/waybar/scripts/volume.sh --inc",
@@ -71,18 +79,30 @@
     
     "custom/power-menu": {
         "format": " ⏻ ",
-        "on-click": "~/.config/rofi/scripts/powermenu"
+        "on-click": "~/.config/rofi/powermenu/type-1/powermenu.sh"
     },
     "custom/launcher": {
           "icon-size": 30,
           "spacing": 10,
         "format": "  ",
-        "on-click": "~/.config/rofi/scripts/launcher"
+        "on-click": "~/.config/rofi/launchers/type-1/launcher.sh"
     },
     "custom/wallpaper": {
         "format": "󰆞",
         "on-click": "~/.config/rofi/scripts/wallpaper",
         "on-click-right": "~/.config/waybar/scripts/wallpaper.sh"
-    }
-    
+    },
+     "custom/media": {
+        "format": "󰽰  {}",
+        "escape": true,
+        "return-type": "json",
+        "max-length": 40,
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl stop",
+        "smooth-scrolling-threshold": 10,
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+}
+
 }

@@ -37,10 +37,10 @@
     "windowBarHeight": "18",
     "collapsedDistance": "0",
     "buttonCollapseFudgeFactor": "10",
-    "serverListButtonActive": "false",
-    "channelListButtonActive": "false",
+    "serverListButtonActive": "true",
+    "channelListButtonActive": "true",
     "msgBarButtonActive": "true",
-    "userAreaButtonActive": "true",
+    "userAreaButtonActive": "false",
     "profilePanelButtonActive": "true",
     "membersListButtonActive": "false"
 }

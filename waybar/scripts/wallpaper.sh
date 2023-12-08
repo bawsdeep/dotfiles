@@ -21,8 +21,8 @@ elif [[ "$(<~/.cache/wal/mode )" = "light" ]]; then
   wal -i ${DIR}/${RANDOMPICS} -l --cols16
 fi
 
-pywalfox update
+#pywalfox update
 pywal-discord -t default
-wal-telegram --wal
+#wal-telegram --wal
 
 . $HOME/.config/mako/update-colors.sh
