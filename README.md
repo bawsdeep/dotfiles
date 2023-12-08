@@ -9,14 +9,14 @@ setup ame and git
 
 `sudo pacman -S --needed base-devel pacman-contrib cargo git`
 
-`git clone https://git.getcryst.al/crystal/pkgbuilds/ame`
+`git clone https://aur.archlinux.org/paru.git`
 
-`cd ame && makepkg -si`
+`cd paru && makepkg -si`
 
 `cd ~`
 
 clone this repo
-`git clone https://github.com/weeabootarsh/dotfiles.git`
+`git clone https://github.com/ls-wdiff/dotfiles.git`
 
 `cd ~`
 
@@ -26,14 +26,14 @@ essential
 
 source your own gpu drivers
 
-`ame -S vulkan-radeon` 
+`paru -S vulkan-radeon` 
 
 set up utils
 
-`ame -S polkit-kde-agent kitty neovim neovide wget swaylock-effects brightnessctl pavucontrol alsa-utils grim slurp wl-clipboard mpv python-pip rofi blueberry bluez bluez-utils ranger ts-node zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd awesome-terminal-fonts powerline inotify-tools greetd greetd-tuigreet thunar thunar-archive-plugin gvfs ark playerctl pamixer whitesur-icon-theme-git whitesur-cursor-theme-git whitesur-gtk-theme-git xdg-user-dirs nwg-look-bin python-pillow pywal-discord-git mako-git loupe gnome-keyring neofetch imagemagick wtype ttf-3270-nerd inter-font-beta noto-fonts-emoji ttf-droid otf-font-awesome ttf-font-awesome alsa-firmware tumbler python-pip`
+`paru -S polkit-kde-agent kitty neovim neovide wget swaylock-effects brightnessctl pavucontrol alsa-utils grim slurp wl-clipboard mpv python-pip rofi blueberry bluez bluez-utils ranger ts-node zsh ttf-jetbrains-mono ttf-jetbrains-mono-nerd awesome-terminal-fonts powerline inotify-tools greetd greetd-tuigreet thunar thunar-archive-plugin gvfs ark playerctl pamixer whitesur-icon-theme-git whitesur-cursor-theme-git whitesur-gtk-theme-git bibata-cursor-theme xdg-user-dirs nwg-look-bin python-pillow pywal-discord-git mako-git neofetch imagemagick ttf-3270-nerd inter-font-beta noto-fonts-emoji ttf-droid otf-font-awesome ttf-font-awesome alsa-firmware tumbler feh`
 
 all other aps
-`ame -S vivaldi vivaldi-ffmpeg-codecs discord betterdiscordctl betterdiscord-git liquidctl coolercontrol neovim eza nvtop cava tty-clock`
+`paru -S vivaldi vivaldi-ffmpeg-codecs discord betterdiscordctl betterdiscord-git liquidctl coolercontrol neovim eza nvtop cava tty-clock`
 
   
 setup the absolute essential....oh-my-zsh 
