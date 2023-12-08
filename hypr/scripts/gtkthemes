@@ -5,7 +5,7 @@
 THEME='WhiteSur-Dark'
 ICONS='WhiteSur-dark'
 FONT='Inter 11'
-CURSOR='bibata-cursor-themes'
+CURSOR='Bibata-Modern-Classic'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
